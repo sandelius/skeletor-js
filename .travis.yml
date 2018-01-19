@@ -1,0 +1,8 @@
+language: node_js
+script: npm run test:cov
+node_js:
+  - 9.0
+  - 9.4
+cache:
+  directories:
+    - node_modules
