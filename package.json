@@ -5,7 +5,7 @@
   "author": "Tobias Sandelius <tobias@sandeli.us>",
   "license": "MIT",
   "main": "lib/index.js",
-  "repository": "github:sandelius/skeleton-js",
+  "repository": "github:sandelius/skeletor-js",
   "scripts": {
     "test": "jest",
     "test:cov": "jest --coverage",
