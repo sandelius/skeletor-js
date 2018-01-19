@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "test:cov": "jest --coverage",
-    "test:ci": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls.js",
+    "test:ci": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "standard": "standard --env jest"
   },
   "keywords": [
