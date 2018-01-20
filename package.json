@@ -24,8 +24,7 @@
     "standard": "^10.0.3"
   },
   "jest": {
-    "testMatch": [
-      "**/*-spec.js?(x)"
-    ]
+    "testMatch": ["**/*-spec.js?(x)"],
+    "setupFiles": ["./spec/spec-helper.js"]
   }
 }
