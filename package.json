@@ -20,11 +20,15 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "jest": "^22.1.1",
-    "standard": "^10.0.3"
+    "jest": "^22.4.3",
+    "standard": "^11.0.1"
   },
   "jest": {
-    "testMatch": ["**/*-spec.js?(x)"],
-    "setupFiles": ["./spec/spec-helper.js"]
+    "testMatch": [
+      "**/*-spec.js?(x)"
+    ],
+    "setupFiles": [
+      "./spec/spec-helper.js"
+    ]
   }
 }
