@@ -8,8 +8,7 @@
 //
 //     if (pass) {
 //       return {
-//         message: () =>
-//           `expected ${received} not to be divisible by ${argument}`,
+//         message: () => `expected ${received} not to be divisible by ${argument}`,
 //         pass: true,
 //       }
 //     } else {
