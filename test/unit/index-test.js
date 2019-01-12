@@ -3,7 +3,7 @@
 const index = require('../../lib/index')
 
 describe('index', () => {
-  test('that it contains an object', () => {
-    expect(index).toEqual({})
+  it('that it contains an object', () => {
+    expect(index).to.deepEqual({})
   })
 })
