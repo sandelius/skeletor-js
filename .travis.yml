@@ -1,8 +1,10 @@
 language: node_js
 script: npm run test:ci
+env:
+  global:
+    - CODECOV_TOKEN="52b505b7-f1b3-46d1-b6ec-efc17dd4558f"
 node_js:
-  - 11
-  - 10
+  - 14
 cache:
   directories:
     - node_modules

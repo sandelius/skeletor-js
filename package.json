@@ -1,5 +1,6 @@
 {
   "name": "skeletor-js",
+  "type": "module",
   "version": "1.0.0",
   "description": "Skeleton package",
   "author": "Tobias Sandelius <tobias@sandeli.us>",
@@ -7,9 +8,9 @@
   "main": "lib/index.js",
   "repository": "github:sandelius/skeletor-js",
   "scripts": {
-    "test": "mocha",
-    "test:cov": "nyc --reporter=html mocha",
-    "test:ci": "nyc --reporter=lcov mocha && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:ci": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/codecov --pipe",
     "clean": "rm -rf .nyc_output coverage"
   },
   "files": [
@@ -19,13 +20,24 @@
     "Skeleton"
   ],
   "engines": {
-    "node": ">=11.0"
+    "node": ">=14.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "coveralls": "^3.0.2",
-    "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
+    "@babel/preset-env": "^7.9.6",
+    "babel-jest": "^26.0.1",
+    "codecov": "^3.6.5",
+    "jest": "^26.0.1",
     "standard": "^12.0.1"
   },
   "dependencies": {}
